@@ -9,7 +9,7 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 #添加自定义组件
-git clone https://github.com/fshh1988/luci-app-chinadns.git ./package/mypackage/luci-app-chinadns
+git clone https://github.com/aa65535/openwrt-dist-luci.git ./package/mypackage/openwrt-dist-luci
 git clone https://github.com/aa65535/openwrt-chinadns.git ./package/mypackage/openwrt-chinadns
 git clone https://github.com/fshh1988/luci-app-nfs.git ./package/mypackage/luci-app-nfs
 git clone https://github.com/kuoruan/openwrt-v2ray.git ./package/mypackage/openwrt-v2ray
