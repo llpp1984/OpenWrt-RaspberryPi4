@@ -11,13 +11,10 @@
 #添加自定义组件
 git clone https://github.com/fshh1988/luci-app-chinadns.git ./package/mypackage/luci-app-chinadns
 git clone https://github.com/aa65535/openwrt-chinadns.git ./package/mypackage/openwrt-chinadns
-git clone https://github.com/fshh1988/luci-app-nfs.git ./package/mypackage/luci-app-nfs
 git clone https://github.com/kuoruan/openwrt-v2ray.git ./package/mypackage/openwrt-v2ray
 git clone https://github.com/kuoruan/luci-app-v2ray.git ./package/mypackage/luci-app-v2ray
 git clone https://github.com/jefferymvp/luci-app-koolproxyR.git ./package/mypackage/luci-app-koolproxyR
 git clone https://github.com/sypopo/luci-theme-atmaterial.git ./package/mypackage/luci-theme-atmaterial
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/mypackage/luci-app-adguardhome
-git clone https://github.com/sypopo/luci-theme-argon-mc.git ./package/mypackage/luci-theme-argon-mc
 
 #修复核心及添加温度显示
 sed -i 's|pcdata(boardinfo.system or "?")|luci.sys.exec("uname -m") or "?"|g' feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
