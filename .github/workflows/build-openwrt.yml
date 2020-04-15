@@ -1,7 +1,7 @@
 #=================================================
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
-# Lisence: MIT 
+# Lisence: MIT
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
@@ -59,7 +59,7 @@ jobs:
     - name: Clone source code
       run: |
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
-	cd openwrt && git checkout 3ad7a35
+        cd openwrt && git checkout 3ad7a35
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
